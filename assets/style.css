@@ -1,0 +1,386 @@
+body
+	{margin: 0;
+	background-color: #eee6d9;}
+
+#logobg
+	{padding: 20px;
+	background-color: #fffdf7;}
+#logo{
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	}
+.navbar{
+	padding: 1.5% 0%;
+	background-color: #e8662f;
+	text-align: center;
+	justify-content:center;
+	margin-bottom:0;
+	width:100%;
+	}
+	
+.navbtn
+		{padding:1.5% 5%;
+		background-color: #e8662f;
+		font-size: 25px;
+		font-weight: 800;
+		color: #fffcfb;
+		font-family: 'Nunito';
+		text-align: center;
+		text-decoration: none;
+		transition-duration: 0.5s;}
+.navbtn:hover
+		{background-color: rgba(153,10,10,255);
+		color: #fffcfb;}
+.sticky
+		{
+		position: sticky;
+		top: 0;
+		width: 100%;
+		z-index: 999;
+		}
+
+
+	h1
+		{font-size: 75px;
+		font-weight: 400;
+		color: #fffcfb;
+		font-family: 'Titan One';
+		-webkit-text-stroke-width: 4px;
+		-webkit-text-stroke-color: #db4507;
+		line-height: 1.2;}
+	h2
+		{font-size: 50px;
+		font-weight: 400;
+		color: #fffcfb;
+		font-family: 'Titan One';
+		-webkit-text-stroke-width: 3px;
+		-webkit-text-stroke-color: #db4507;
+		line-height: 1.2;}
+	h3
+		{margin: 10px;
+		font-size: 35px;
+		font-weight: 400;
+		color: #fffcfb;
+		font-family: 'Titan One';
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: #db4507;
+		text-align: center;
+		line-height: 1.2;}
+	p
+		{font-size: 25px;
+		font-weight: 800;
+		font-family: 'Nunito';
+		line-height: 1.2;}
+	table
+		{margin-left: auto;
+		margin-right: auto;}
+	td
+		{padding: 10px;}
+
+.footer
+	{
+	padding-top: 2%;
+	padding-bottom: .7%;
+	padding-left: 9%;
+	padding-right: 9%;
+	background-color: #fffdf7;
+	display:flex;
+	flex-direction:row;
+	}	
+#footerLogoImg{
+	height:100%; 
+	width:100%; 
+	align-self: center;
+}
+#footerlogo{
+			
+			flex:2;
+			object-fit: contain;
+		}
+#copyright
+		{padding-top: 3%;
+		float:left;
+		color: #ebc498;
+		text-align: left;
+		flex:9;
+		}
+#contactinfo
+		{font-size: 20px;
+		color: #bd815e;
+		text-align: right;
+		flex:3;
+		}
+
+.intro{
+	animation-name:intro;
+	animation-duration:1s;
+}
+.introLogo{
+	animation-name:introLogo;
+	animation-duration:.7s;
+}	
+.flexcontain{
+	width:100%;
+	height:min-height;
+	display:flex;
+	flex-direction:row;
+	margin-bottom:3%;
+	justify-content:center;
+}
+.content{
+	display:flex;
+	flex-direction:column;
+	
+}
+.flexFloat{
+	display:flex;
+	flex-direction:column;
+	padding:1%;
+}
+.flexRow{
+	flex-direction:row;
+	display:flex;
+}
+.flexRowRev{
+	flex-direction:row;
+	display:flex;
+}
+.indexLeft{
+	display:flex;
+	flex:7;
+}
+.indexRight{
+	display:flex;
+	flex:5;
+}
+.homeimg{
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	object-fit:cover;
+	}
+.indexContentL{
+	padding-right:8%;
+}
+.indexContentR{
+	padding-left:8%;
+	text-align: right;
+}
+.indexContentHead{
+	font-size: 100px;
+	font-weight: 400;
+}
+.indexContentHeadR{
+	font-size: 100px;
+	font-weight: 400;
+	text-align: right;
+}
+
+
+.aboutStartL{
+	display:flex;
+	flex:4;
+}
+.aboutStartR{
+	display:flex;
+	flex:8;
+}
+.aboutStartImg{
+	width:100%;
+	height:80vh;
+	object-fit:cover;
+}
+.aboutMainContent{
+	padding: 3%; 
+
+}
+.aboutName{
+	flex-direction:row;
+	display:flex;
+	flex:5;
+}
+.aboutExplain{
+	display:flex;
+	flex:7;
+	padding-right: 4%; 
+	padding-left: 16%; 
+	width:20%;
+}
+.aboutBotImg{
+	width: 40%;
+	padding-bottom:5vh;
+}
+.member{
+	margin-left:20%;
+	margin-right:5%;
+	
+}
+.aboutP{
+	font-size:25px;
+}
+.aboutH2{
+	font-size:3em;
+}
+/*opening animation*/
+@keyframes intro{
+		0%{
+			transform: translateX(-100%);
+		}
+	
+		100%{
+			transform: translateX(0%);
+			}
+}	
+@keyframes introLogo{
+		0%{
+			transform: translateY(-100%);
+		}
+	
+		100%{
+			transform: translateY(0%);
+			}
+}
+/*flex*/
+@media screen and (max-width: 768px){
+
+	.navbar{
+		margin-top:0;
+		padding:2% 0%;
+	}
+	.navbtn{
+		padding: 2% 5%;
+		font-size: 15px;
+		font-weight: 800;
+	}
+	#logo{
+		width: 40%;
+		
+	}
+	#logobg{
+		padding:1%;
+		
+	}
+	.flexcontain{
+		flex-direction:column;
+	}
+	.footer{
+		flex-direction:column;
+		justify-content:center;
+	}
+	#footerlogo{
+			left:0; right:0; margin:0 auto;
+			width: 60%;
+			}
+	#copyright
+			{padding-top: 3%;
+			float:left;
+			color: #ebc498;
+			text-align: center;
+			
+			}
+	#contactinfo
+			{font-size: 20px;
+			color: #bd815e;
+			text-align: center;
+			
+			}
+	.flexRow{
+		flex-direction:column;
+		justify-content:center;
+	}
+	.flexRowRev{
+		flex-direction:column-reverse;
+		justify-content:center;
+	}
+	
+		.indexContentL{
+			padding-right:0;
+
+		}
+		.indexContentR{
+			padding-left:0;
+			text-align: left;
+
+		}
+		.indexContentHead{
+			font-size: 80px;
+		}
+		.indexContentHeadR{
+			font-size: 80px;
+			text-align: left;
+		}
+		.aboutBotImg{
+			width: 100%;
+			padding-bottom:5vh;
+		}
+		.aboutName{
+			justify-content:center;
+			flex-direction:column;
+			text-align:center;
+			
+		}
+		.aboutExplain{
+			text-align:center;
+			padding-right: 0; 
+			padding-left: 0; 
+			width:100%;
+			margin:4%;
+			font-size:200px;
+		}
+		.member{
+			left:0; right:0; margin:0 auto;
+			width:50vh;
+			height:50vh;
+		}	
+		.aboutP{
+			font-size:20px;
+			text-align:left;
+		}
+		.aboutH2{
+			font-size:50px;
+		}
+}
+/*animation scroll*/
+.LAni{
+	animation-name:left;
+	animation-duration:.7s;
+}
+.RAni{
+	animation-name:right;
+	animation-duration:.7s;
+}
+.CAni{
+	animation-name:center;
+	animation-duration:.5s;
+}
+@keyframes left{
+		0%{
+			transform: translateX(-100%);
+		}
+	
+		100%{
+			transform: translateX(0%);
+			}
+}	
+@keyframes right{
+		0%{
+			transform: translateX(100%);
+		}
+	
+		100%{
+			transform: translateX(0%);
+			}
+}	
+@keyframes center{
+		0%{
+			transform: translateY(100%);
+		}
+	
+		100%{
+			transform: translateY(0%);
+			}
+}	
