@@ -1,0 +1,163 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="assets/favicon.png">
+	<title> Gallery | Art FES </title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<style type="text/css">
+		img
+			{width: 100%;}
+		{box-sizing: border-box;}
+		.container
+			{width: 50%;
+			padding: 50px;
+			margin: auto;
+			position: relative;}
+		.Slide
+			{display: none;}
+		.cursor
+			{cursor: pointer;}
+		.prev, .next
+			{width: auto;
+			padding: 15px;
+			margin: auto;
+			position: absolute;
+			top: 40%;
+			border-radius: 5px;
+			background-color: rgba(232,102,47,0.5);
+			font-size: 20px;
+			font-weight: bold;
+			color: white;
+			user-select: none;
+			-webkit-user-select: none;
+			cursor: pointer;
+			transition-duration: 0.5s;}
+		.prev
+			{left: 0;}
+		.next
+			{right: 0;}
+		.prev:hover, .next:hover
+			{background-color: #e8662f;}
+		.numbertext
+			{padding: 8px 12px;
+			color: #fffcfb;
+			font-size: 20px;
+			font-family: 'Nunito';
+			-webkit-text-stroke-width: 0.5px;
+			-webkit-text-stroke-color: #db4507;
+			position: absolute;}
+		.caption-container
+			{padding: 2px 16px;
+			text-align: center;
+			background-color: #e8662f;
+			color: #fffcfb;}
+		.row:after
+			{content: "";
+			display: table;
+			clear: both;}
+		.column
+			{float: left;
+			width: 16.66%;}
+		.demo
+			{opacity: 0.5;}
+		.active, .demo:hover
+			{opacity: 1;}
+	</style>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titan+One">
+</head>
+<body>
+<div id="logobg">
+	<img src="assets/logo.png" id="logo">
+</div>
+<div class="navbar" id="Navbar">
+	<a href="index.html" class="navbtn"> Home </a>
+	<a href="about.html" class="navbtn"> About </a>
+	<a href="products.html" class="navbtn"> Products </a>
+	<a href="gallery.html" class="navbtn"> Gallery </a>
+</div>
+<div class="content">
+	<div class="container">
+		<div class="Slide">
+			<div class="numbertext"> 1 / 6 </div>
+			<img src="https://www.homemade-gifts-made-easy.com/image-files/printable-alphabet-letters-cartoon-number-1-400x518.png">
+		</div>
+		<div class="Slide">
+			<div class="numbertext"> 2 / 6 </div>
+			<img src="https://www.homemade-gifts-made-easy.com/image-files/printable-alphabet-letters-cartoon-number-2-400x518.png">
+		</div>
+		<div class="Slide">
+			<div class="numbertext">3 / 6</div>
+			<img src="https://www.homemade-gifts-made-easy.com/image-files/printable-alphabet-letters-cartoon-number-3-400x518.png">
+		</div>
+		<div class="Slide">
+			<div class="numbertext">4 / 6</div>
+			<img src="https://www.homemade-gifts-made-easy.com/image-files/printable-alphabet-letters-cartoon-number-4-400x518.png">
+		</div>
+		<div class="Slide">
+			<div class="numbertext">5 / 6</div>
+			<img src="https://www.homemade-gifts-made-easy.com/image-files/printable-alphabet-letters-cartoon-number-5-400x518.png">
+		</div>
+		<div class="Slide">
+			<div class="numbertext">6 / 6</div>
+			<img src="https://www.homemade-gifts-made-easy.com/image-files/printable-alphabet-letters-cartoon-number-6-400x518.png">
+		</div>
+		<a class="prev" onclick="plusSlides(-1)"> &#10094; </a>
+		<a class="next" onclick="plusSlides(1)"> &#10095; </a>
+		<div class="caption-container"> <p id="caption"> </p> </div>
+		<div class="row">
+			<div class="column"> <img class="demo cursor" src="https://www.homemade-gifts-made-easy.com/image-files/printable-alphabet-letters-cartoon-number-1-400x518.png" onclick="currentSlide(1)" alt="1"> </div>
+			<div class="column"> <img class="demo cursor" src="https://www.homemade-gifts-made-easy.com/image-files/printable-alphabet-letters-cartoon-number-2-400x518.png" onclick="currentSlide(2)" alt="2"> </div>
+			<div class="column"> <img class="demo cursor" src="https://www.homemade-gifts-made-easy.com/image-files/printable-alphabet-letters-cartoon-number-3-400x518.png" onclick="currentSlide(3)" alt="3"> </div>
+			<div class="column"> <img class="demo cursor" src="https://www.homemade-gifts-made-easy.com/image-files/printable-alphabet-letters-cartoon-number-4-400x518.png" onclick="currentSlide(4)" alt="4"> </div>
+			<div class="column"> <img class="demo cursor" src="https://www.homemade-gifts-made-easy.com/image-files/printable-alphabet-letters-cartoon-number-5-400x518.png" onclick="currentSlide(5)" alt="5"> </div>
+			<div class="column"> <img class="demo cursor" src="https://www.homemade-gifts-made-easy.com/image-files/printable-alphabet-letters-cartoon-number-6-400x518.png" onclick="currentSlide(6)" alt="6"> </div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<table> <tr>
+		<td>
+			<img src="assets/logo.png" id="footerlogo">
+			<p id="copyright"> ©  2023 Art FES. All Rights Reserved. </p>
+		</td>
+		<td>
+			<p id="contactinfo"> artfes.merch@gmail.com <br> +63 912 345 6789 </p>
+		</td>
+	</tr> </table>
+</div>
+<script>
+	window.onscroll = function() {myFunction()};
+	var navbar = document.getElementById("Navbar");
+	var sticky = navbar.offsetTop;
+	function myFunction()
+		{if (window.pageYOffset > sticky)
+			{navbar.classList.add("sticky");}
+		else
+			{navbar.classList.remove("sticky");}}
+	
+	let slideIndex = 1;
+		showSlides(slideIndex);
+	function plusSlides(n)
+		{showSlides(slideIndex += n);}
+	function currentSlide(n)
+		{showSlides(slideIndex = n);}
+	function showSlides(n)
+		{let i;
+		let slides = document.getElementsByClassName("Slide");
+		let dots = document.getElementsByClassName("demo");
+		let captionText = document.getElementById("caption");
+		if (n > slides.length)
+			{slideIndex = 1}
+		if (n < 1)
+			{slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++)
+			{slides[i].style.display = "none";}
+		for (i = 0; i < dots.length; i++)
+			{dots[i].className = dots[i].className.replace(" active", "");}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+		captionText.innerHTML = dots[slideIndex-1].alt;}
+</script>
+</body>
+</html>
