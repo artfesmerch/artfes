@@ -169,6 +169,7 @@ body
 .indexContentR{
 	padding-left:8%;
 	text-align: right;
+	display:flex;
 }
 .indexContentHead{
 	font-size: 100px;
