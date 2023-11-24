@@ -104,6 +104,22 @@
 			padding: 1%;
 			position: relative;
 		}
+	@keyframes slidePrev{
+		0%{
+			transform: translate(-100%);
+		}
+	
+		100%{
+			transform: translate(0%);
+		}}
+	@keyframes slideFwd{
+		0%{
+			transform: translate(100%);
+		}
+	
+		100%{
+			transform: translate(0%);
+		}}
 		}
 	@keyframes slidePrev{
 		0%{
@@ -113,7 +129,7 @@
 		100%{
 			transform: translate(0%);
 		}}
-		@keyframes slideFwd{
+	@keyframes slideFwd{
 		0%{
 			transform: translate(-700%);
 		}
