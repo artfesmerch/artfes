@@ -22,7 +22,16 @@
 			{float: left;
 			transition-duration: 0.5s;}
 		#back:hover
-			{opacity: 0.5;}
+			{opacity: 0.5;
+			transform:scale(1.1)}
+		@media screen and (max-width: 768px){
+			.prodimg
+			{width: 265px;
+			height: 265px;left:0; right:0; margin:0 auto;}
+		}
+		#back
+			{left:0; right:0; margin:0 auto;
+		}
 	</style>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titan+One">
@@ -38,23 +47,24 @@
 	<a href="../gallery.html" class="navbtn"> Gallery </a>
 </div>
 <div class="content" style="padding: 50px;">
-	<a href="../products.html" id="back"> <h3> Back </h3> </a>
-	<table> <tr>
-		<td class="prod"> <a href="product_template.html">
-			<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg">
-			<h3> Product Name </h3>
-		</a> </td>
-		<td class="prod"> <a href="product_template.html">
-			<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg">
-			<h3> Product Name </h3>
-		</a> </td>
-		<td class="prod"> <a href="product_template.html">
-			<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg">
-			<h3> Product Name </h3>
-		</a> </td>
-	</tr> </table>
+	<div id="back">
+		<a href="../product.html" id="back" class="LAni"> <h3> Back </h3> </a>
+	</div>
+		<div class="flexcontain">
+		<div class="flexFloat LAni">
+			<div class="prod"><a href="product_template.html"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
+			<div><h3> Product Name </h3></div>
+		</div>	
+		<div  class="flexFloat CAni">
+			<div  class="prod"><a href="product_template.html">	<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
+			<div><h3> Product Name </h3></div>
+		</div>
+		<div  class="flexFloat RAni">
+			<div  class="prod"><a href="product_template.html"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
+			<div><h3> Product Name </h3></div>
+		</div>
+	</div>
 </div>
-<div class="footer">
 <div class="footer">
 	<div id="footerlogo">
 		<img src="../assets/logo.png" id="footerLogoImg">
@@ -65,7 +75,6 @@
 	<div id="contactinfo">
 		<p style="font-size: 20px;"> artfes.merch@gmail.com <br> +63 912 345 6789 </p>
 	</div>
-</div>
 </div>
 <script>
 </script>
