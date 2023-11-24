@@ -2,24 +2,33 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="../assets/favicon.png">
-	<title>  | Art FES </title>
+	<title> Starrii's merch | Art FES </title>
 	<link rel="stylesheet" type="text/css" href="../assets/style.css">
 	<style type="text/css">
+		.prod
+			{padding: 10px;
+			transition-duration: 0.5s;}
+		.prod:hover
+			{opacity: 0.5;}
+		.prodimg
+			{width: 300px;
+			height: 300px;
+			border-radius: 25%;
+			margin: auto;
+			display: block;}
 		a
 			{text-decoration: none;}
 		#back
-			{
-			margin:1%;
-			position: block;
-			float: left;
+			{float: left;
 			transition-duration: 0.5s;}
 		#back:hover
-			{opacity: 0.5;}
-		.ProductImg{
-		height:100%;
-		width:100%;
-		}
+			{opacity: 0.5;
+			transform:scale(1.1)}
 		@media screen and (max-width: 768px){
+			.prodimg
+			{width: 265px;
+			height: 265px;left:0; right:0; margin:0 auto;}
+		}
 		#back
 			{left:0; right:0; margin:0 auto;
 		}
@@ -35,21 +44,26 @@
 	<a href="../index.html" class="navbtn"> Home </a>
 	<a href="../about.html" class="navbtn"> About </a>
 	<a href="../products.html" class="navbtn"> Products </a>
-	<a href="gallery.html" class="navbtn"> Gallery </a>
+	<a href="../gallery.html" class="navbtn"> Gallery </a>
 </div>
-<div class="content">
+<div class="content" style="padding: 50px;">
 	<div id="back">
-		<a href="franny.html" id="back"> <h3> Back </h3> </a>
+		<a href="../product.html" id="back" class="LAni"> <h3> Back </h3> </a>
 	</div>
-	
-		<div class="flexRowRev" style="background-color: #e8662f; padding:3%;">
-		<div>
-			<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png"class="homeimg">
+		<div class="flexcontain">
+		<div class="flexFloat LAni">
+			<div class="prod"><a href="product_template.html"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
+			<div><h3> Product Name </h3></div>
+		</div>	
+		<div  class="flexFloat CAni">
+			<div  class="prod"><a href="product_template.html">	<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
+			<div><h3> Product Name </h3></div>
 		</div>
-		<div class="content indexContentR">
-			<h1 id="flex" class="indexContentHeadR" > Product Name</h1>
-			<p style="color: #fffcfb;"> From original designs to fanmade ones such as Genshin Impact and Ensemble Stars, Art FES is sure to have it all. </p></div>
+		<div  class="flexFloat RAni">
+			<div  class="prod"><a href="product_template.html"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
+			<div><h3> Product Name </h3></div>
 		</div>
+	</div>
 </div>
 <div class="footer">
 	<div id="footerlogo">
@@ -63,7 +77,6 @@
 	</div>
 </div>
 <script>
-
 </script>
 </body>
 </html>
