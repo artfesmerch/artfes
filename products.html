@@ -1,37 +1,39 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/x-icon" href="assets/favicon.png">
-	<title> Products | Art FES </title>
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+	<title> CreNinja's merch | Art FES </title>
+	<link rel="stylesheet" type="text/css" href="../assets/style.css">
 	<style type="text/css">
 		.prod
-			{
-			transition-duration: 0.5s;
-			opacity: .50;
-			}
+			{padding: 10px;
+			transition-duration: 0.5s;}
 		.prod:hover
-			{
-			transform: scale(1.1);
-			opacity: 1;
-			}
+			{opacity: 0.5;}
 		.prodimg
 			{width: 300px;
 			height: 300px;
 			border-radius: 25%;
 			margin: auto;
-			display: block;
-			}
-
-		
+			display: block;}
 		a
-			{text-decoration: none;
-		}
+			{text-decoration: none;}
+		#back
+			{
+			margin:1%;
+			position: block;
+			float: left;
+			transition-duration: 0.5s;}
+		#back:hover
+			{opacity: 0.5;}
 		@media screen and (max-width: 768px){
 			.prodimg
 			{width: 265px;
 			height: 265px;left:0; right:0; margin:0 auto;}
 			
+		}
+		#back
+			{left:0; right:0; margin:0 auto;
 		}
 	</style>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
@@ -39,43 +41,36 @@
 </head>
 <body>
 <div id="logobg">
-	<img src="assets/logo.png" id="logo" class="introLogo">
+	<img src="../assets/logo.png" id="logo" class="introLogo">
 </div>
 <div class="navbar sticky intro" id="Navbar">
-	<a href="index.html" class="navbtn"> Home </a>
-	<a href="about.html" class="navbtn"> About </a>
-	<a href="products.html" class="navbtn"> Products </a>
-	<a href="gallery.html" class="navbtn"> Gallery </a>
+	<a href="../index.html" class="navbtn"> Home </a>
+	<a href="../about.html" class="navbtn"> About </a>
+	<a href="../products.html" class="navbtn"> Products </a>
+	<a href="../gallery.html" class="navbtn"> Gallery </a>
 </div>
 <div class="content" style="padding: 50px;">
-	<div class="flexcontain">
+	<div>
+		<a href="../creninja/creninja.html" id="back" class="LAni"> <h3> Back </h3> </a>
+	</div>
+		<div class="flexcontain">
 		<div class="flexFloat LAni">
 			<div class="prod"><a href="cosmic/cosmic.html"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
-			<div><h3> cosmic's merch </h3></div>
+			<div><h3> Producct Name </h3></div>
 		</div>	
 		<div  class="flexFloat CAni">
 			<div  class="prod"><a href="creninja/creninja.html">	<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
-			<div><h3> CreNinja's merch </h3></div>
+			<div><h3> Producct Name </h3></div>
 		</div>
 		<div  class="flexFloat RAni">
 			<div  class="prod"><a href="frannyy/frannyy.html"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
-			<div><h3> Frannyy's merch </h3></div>
+			<div><h3> Producct Name </h3></div>
 		</div>
-	</div>
-	<div class="flexcontain">
-		<div  class="flexFloat LAni">
-			<div class="prod"><a href="kasu/kasu.html"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a></div>
-			<div><h3> Kasu's merch </h3></div>
-		 </div>
-		 <div  class="flexFloat RAni">
-			<div class="prod"><a href="starrii/starrii.html">	<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a></div>
-			<div><h3> Starrii's merch </h3></div>
-		 </div>
 	</div>
 </div>
 <div class="footer">
 	<div id="footerlogo">
-		<img src="assets/logo.png" id="footerLogoImg">
+		<img src="../assets/logo.png" id="footerLogoImg">
 	</div>
 	<div id="copyright">	
 		<p style="font-size: 15px;"> ©  2023 Art FES. All Rights Reserved. </p>
