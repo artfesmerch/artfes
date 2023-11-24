@@ -248,7 +248,7 @@ body
 /*flex*/
 @media screen and (max-width: 768px){
 	.content{
-		text-align:center;
+		justify-content:center;
 	}
 	.flexFloat{
 		padding:0;
