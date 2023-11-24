@@ -23,6 +23,14 @@
 			transition-duration: 0.5s;}
 		#back:hover
 			{opacity: 0.5;}
+		@media screen and (max-width: 768px){
+			.prodimg
+			{width: 265px;
+			height: 265px;left:0; right:0; margin:0 auto;}
+		}
+		#back
+			{left:0; right:0; margin:0 auto;
+		}
 	</style>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titan+One">
@@ -38,21 +46,23 @@
 	<a href="../gallery.html" class="navbtn"> Gallery </a>
 </div>
 <div class="content" style="padding: 50px;">
-	<a href="../products.html" id="back"> <h3> Back </h3> </a>
-	<table> <tr>
-		<td class="prod"> <a href="product_template.html">
-			<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg">
-			<h3> Product Name </h3>
-		</a> </td>
-		<td class="prod"> <a href="product_template.html">
-			<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg">
-			<h3> Product Name </h3>
-		</a> </td>
-		<td class="prod"> <a href="product_template.html">
-			<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg">
-			<h3> Product Name </h3>
-		</a> </td>
-	</tr> </table>
+	<div id="back">
+		<a href="../creninja/creninja.html" id="back" class="LAni"> <h3> Back </h3> </a>
+	</div>
+		<div class="flexcontain">
+		<div class="flexFloat LAni">
+			<div class="prod"><a href="cosmic/cosmic.html"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
+			<div><h3> Producct Name </h3></div>
+		</div>	
+		<div  class="flexFloat CAni">
+			<div  class="prod"><a href="creninja/creninja.html">	<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
+			<div><h3> Producct Name </h3></div>
+		</div>
+		<div  class="flexFloat RAni">
+			<div  class="prod"><a href="frannyy/frannyy.html"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
+			<div><h3> Producct Name </h3></div>
+		</div>
+	</div>
 </div>
 <div class="footer">
 	<div id="footerlogo">
