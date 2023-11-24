@@ -249,6 +249,7 @@ body
 @media screen and (max-width: 768px){
 	.content{
 		justify-content:center;
+		width:100%;
 	}
 	.flexFloat{
 		padding:0;
@@ -351,6 +352,7 @@ body
 		.aboutH2{
 			font-size:50px;
 		}
+	
 }
 /*animation scroll*/
 .LAni{
