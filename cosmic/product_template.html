@@ -19,13 +19,13 @@
 </head>
 <body>
 <div id="logobg">
-	<img src="../assets/logo.png" id="logo">
+	<img src="assets/logo.png" id="logo" class="introLogo">
 </div>
-<div class="navbar" id="Navbar">
-	<a href="../index.html" class="navbtn"> Home </a>
-	<a href="../about.html" class="navbtn"> About </a>
-	<a href="../products.html" class="navbtn"> Products </a>
-	<a href="../gallery.html" class="navbtn"> Gallery </a>
+<div class="navbar sticky intro" id="Navbar">
+	<a href="index.html" class="navbtn"> Home </a>
+	<a href="about.html" class="navbtn"> About </a>
+	<a href="products.html" class="navbtn"> Products </a>
+	<a href="gallery.html" class="navbtn"> Gallery </a>
 </div>
 <div class="content">
 	<div style="margin-top: 10px; padding-bottom: 25px; padding-left: 25px;">
@@ -38,25 +38,17 @@
 	</div>
 </div>
 <div class="footer">
-	<table> <tr>
-		<td>
-			<img src="../assets/logo.png" id="footerlogo">
-			<p id="copyright"> ©  2023 Art FES. All Rights Reserved. </p>
-		</td>
-		<td>
-			<p id="contactinfo"> artfes.merch@gmail.com <br> +63 912 345 6789 </p>
-		</td>
-	</tr> </table>
+	<div id="footerlogo">
+		<img src="assets/logo.png" id="footerLogoImg">
+	</div>
+	<div id="copyright">	
+		<p style="font-size: 15px;"> ©  2023 Art FES. All Rights Reserved. </p>
+	</div>
+	<div id="contactinfo">
+		<p style="font-size: 20px;"> artfes.merch@gmail.com <br> +63 912 345 6789 </p>
+	</div>
 </div>
 <script>
-	window.onscroll = function() {myFunction()};
-	var navbar = document.getElementById("Navbar");
-	var sticky = navbar.offsetTop;
-	function myFunction()
-		{if (window.pageYOffset > sticky)
-			{navbar.classList.add("sticky");}
-		else
-			{navbar.classList.remove("sticky");}}
 </script>
 </body>
 </html>
