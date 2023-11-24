@@ -2,7 +2,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="../assets/favicon.png">
-	<title> CreNinja's merch | Art FES </title>
+	<title> Starri's merch | Art FES </title>
 	<link rel="stylesheet" type="text/css" href="../assets/style.css">
 	<style type="text/css">
 		.prod
@@ -19,13 +19,19 @@
 		a
 			{text-decoration: none;}
 		#back
-			{
-			margin:1%;
-			position: block;
-			float: left;
+			{float: left;
 			transition-duration: 0.5s;}
 		#back:hover
-			{opacity: 0.5;}w
+			{opacity: 0.5;
+			transform:scale(1.1)}
+		@media screen and (max-width: 768px){
+			.prodimg
+			{width: 265px;
+			height: 265px;left:0; right:0; margin:0 auto;}
+		}
+		#back
+			{left:0; right:0; margin:0 auto;
+		}
 	</style>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titan+One">
@@ -41,21 +47,21 @@
 	<a href="../gallery.html" class="navbtn"> Gallery </a>
 </div>
 <div class="content" style="padding: 50px;">
-	<div>
-		<a href="../creninja/creninja.html" id="back" class="LAni"> <h3> Back </h3> </a>
+	<div id="back">
+		<a href="../product.html" id="back" class="LAni"> <h3> Back </h3> </a>
 	</div>
 		<div class="flexcontain">
 		<div class="flexFloat LAni">
-			<div class="prod"><a href="cosmic/cosmic.html"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
-			<div><h3> Producct Name </h3></div>
+			<div class="prod"><a href="product_template.html"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
+			<div><h3> Product Name </h3></div>
 		</div>	
 		<div  class="flexFloat CAni">
-			<div  class="prod"><a href="creninja/creninja.html">	<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
-			<div><h3> Producct Name </h3></div>
+			<div  class="prod"><a href="product_template.html">	<img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
+			<div><h3> Product Name </h3></div>
 		</div>
 		<div  class="flexFloat RAni">
-			<div  class="prod"><a href="frannyy/frannyy.html"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
-			<div><h3> Producct Name </h3></div>
+			<div  class="prod"><a href="product_template.html"><img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png" class="prodimg"></a> </div>
+			<div><h3> Product Name </h3></div>
 		</div>
 	</div>
 </div>
