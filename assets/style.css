@@ -305,7 +305,7 @@ body
 		.indexContentR{
 			padding-left:0;
 			text-align: left;
-			width:100;
+			width:100%;
 		}
 		.indexContentHead{
 			font-size: 80px;
