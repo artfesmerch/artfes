@@ -6,10 +6,15 @@
 	<link rel="stylesheet" type="text/css" href="../assets/style.css">
 	<style type="text/css">
 		.prod
-			{padding: 10px;
-			transition-duration: 0.5s;}
+			{
+			transition-duration: 0.5s;
+			opacity: .50;
+			}
 		.prod:hover
-			{opacity: 0.5;}
+			{
+			transform: scale(1.1);
+			opacity: 1;
+			}
 		.prodimg
 			{width: 300px;
 			height: 300px;
@@ -25,9 +30,15 @@
 			{opacity: 0.5;
 			transform:scale(1.1)}
 		@media screen and (max-width: 768px){
-			.prodimg
-			{width: 265px;
-			height: 265px;left:0; right:0; margin:0 auto;}
+		.prodimg{
+			width: 265px;
+			height: 265px;
+			 left:0; right:0; margin:0 auto;}
+		}
+		.prod{
+			width: 265px;
+			height: 265px;
+			 left:0; right:0; margin:0 auto;}
 		}
 		#back
 			{left:0; right:0; margin:0 auto;
