@@ -247,7 +247,10 @@ body
 }
 /*flex*/
 @media screen and (max-width: 768px){
-
+	.flexFloat{
+		padding:0;
+		justify-content:center;
+	}
 	.navbar{
 		margin-top:0;
 		padding:2% 0%;
